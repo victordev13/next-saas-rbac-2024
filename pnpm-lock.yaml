@@ -35,6 +35,18 @@ importers:
 
   config/tsconfig: {}
 
+  packages/auth:
+    devDependencies:
+      '@victorsaas/eslint-config':
+        specifier: workspace:*
+        version: link:../../config/eslint-config
+      '@victorsaas/prettier':
+        specifier: workspace:*
+        version: link:../../config/prettier
+      '@victorsaas/tsconfig':
+        specifier: workspace:*
+        version: link:../../config/tsconfig
+
 packages:
 
   /@aashutoshrathi/word-wrap@1.2.6:
